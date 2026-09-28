@@ -131,6 +131,9 @@ a:focus-visible {
 
 /* Шапка сайта */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--color-surface);
 }
 
@@ -220,20 +223,6 @@ a:focus-visible {
 
 .product-card:hover {
   border-color: var(--color-primary);
-}
-
-.product-card--featured {
-  border-color: var(--color-primary);
-}
-
-.product-card__badge {
-  align-self: flex-start;
-  padding: 4px 8px;
-  color: var(--color-white);
-  background-color: var(--color-danger);
-  border-radius: var(--radius-sm);
-  font-size: 12px;
-  font-weight: 700;
 }
 
 .product-card__title {
@@ -342,7 +331,10 @@ a:focus-visible {
    =================================== */
 
 .order-dialog {
+  z-index: 1000;
   width: min(100% - 32px, 560px);
+  max-height: 90vh;
+  overflow-y: auto;
   padding: var(--space-lg);
   border: none;
   border-radius: var(--radius-lg);
@@ -414,4 +406,33 @@ a:focus-visible {
 :target {
   outline: 2px dashed var(--color-primary);
   outline-offset: 4px;
+}
+
+/* Кнопка «Наверх» — фиксирована в правом нижнем углу */
+.back-to-top {
+  position: fixed;
+  right: var(--space-lg);
+  bottom: var(--space-lg);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.back-to-top:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
 }
