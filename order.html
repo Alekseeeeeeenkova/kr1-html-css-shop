@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Оформление заявки в учебном интернет-магазине.">
-  <title>Оформление заявки – Учебный интернет-магазин</title>
+  <title>Оформление заявки – Volley.Point</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -12,15 +12,14 @@
 
   <header class="site-header">
     <div class="site-header__inner">
-      <a class="site-header__logo" href="index.html">ShopProject</a>
+      <a class="site-header__logo" href="index.html">Volley.Point</a>
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка и оплата</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#advantages">Преимущества</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#popular">Популярные товары</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="index.html#contacts">Обратная связь</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
         </ul>
       </nav>
     </div>
@@ -103,7 +102,25 @@
     Форма успешно отправлена!
   </p>
   
-  <a class="back-to-top" href="#" aria-label="Наверх">↑</a>
+  <a class="chat-button" href="#chat" aria-label="Открыть чат">
+    <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 1 C 5 7, 5 17, 12 23 M12 1 C 19 7, 19 17, 12 23 M1 12 C 7 7, 17 7, 23 12 M1 12 C 7 17, 17 17, 23 12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+  </a>
+
+  <div class="chat-popup" id="chat">
+    <a class="chat-popup__close" href="#" aria-label="Закрыть">×</a>
+    <h3 class="chat-popup__title">Свяжитесь с нами</h3>
+    <p class="chat-popup__text">
+      Ответим на вопросы о товарах, доставке и оплате.
+    </p>
+    <ul class="chat-popup__list">
+      <li>Телефон: +7 (952) 552-52-52</li>
+      <li>E-mail: info@volley-point.ru</li>
+    </ul>
+    <a class="button button--primary" href="contacts.html">Все контакты</a>
+  </div>
 
 </body>
 </html>

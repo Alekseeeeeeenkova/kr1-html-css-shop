@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Табло для волейбола перекидное — удобный инструмент для судейства.">
+  <title>Табло для волейбола перекидное – Volley.Point</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">Volley.Point</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка и оплата</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Каталог</span>
+      <span class="breadcrumbs__current">Табло для волейбола перекидное</span>
+    </nav>
+
+    <section class="section">
+      <div class="product-detail">
+        <div class="product-detail__media">
+          <img class="product-detail__image" src="images/tablo.jpg" alt="Табло для волейбола перекидное" width="400" height="300">
+        </div>
+
+        <div class="product-detail__info">
+          <h1 class="product-detail__title">Табло для волейбола перекидное (Счёт)</h1>
+          <p class="product-detail__price">1 250 ₽</p>
+          <p class="product-detail__description">
+            Перекидное табло для волейбола — удобный инструмент для судей и тренеров.
+            Позволяет быстро менять счёт, не отвлекаясь от игры.
+            Лёгкое, компактное, легко переносится.
+          </p>
+
+          <button class="button button--primary js-order-button" type="button" data-product="Табло для волейбола перекидное (Счёт)">
+            Заказать
+          </button>
+
+          <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Характеристики</h2>
+
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Производитель</td><td>Volley.Point</td></tr>
+          <tr><td>Материал</td><td>Пластик</td></tr>
+          <tr><td>Размеры</td><td>30 × 20 см</td></tr>
+          <tr><td>Цифры</td><td>0–31</td></tr>
+          <tr><td>Назначение</td><td>Судейство матча</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <p>&copy; 2026 Volley.Point. Все права защищены.</p>
+    <p>Магазин товаров для волейбола</p>
+  </footer>
+
+  <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+    <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+
+    <form class="order-form" id="order-form" action="#" method="post" novalidate>
+
+      <input id="selected-product" name="selected-product" type="hidden">
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-name">Имя</label>
+        <input class="order-form__input" id="order-name" name="name" type="text" placeholder="Введите ваше имя" minlength="2" autocomplete="given-name" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-email">E-mail</label>
+        <input class="order-form__input" id="order-email" name="email" type="email" placeholder="example@mail.ru" autocomplete="email" required>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-phone">Телефон</label>
+        <input class="order-form__input" id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$" required>
+        <small>Формат: +7 (900) 000-00-00</small>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-date">Дата связи</label>
+        <input class="order-form__input" id="order-date" name="date" type="date">
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-topic">Тема заявки</label>
+        <select class="order-form__input" id="order-topic" name="topic" required>
+          <option value="">Выберите тему</option>
+          <option value="product">Заказ товара</option>
+          <option value="consultation">Консультация</option>
+          <option value="delivery">Доставка</option>
+        </select>
+      </div>
+
+      <div class="order-form__field">
+        <label class="order-form__label" for="order-comment">Комментарий</label>
+        <textarea class="order-form__input" id="order-comment" name="comment" rows="4" placeholder="Укажите дополнительную информацию"></textarea>
+      </div>
+
+      <div class="order-form__field order-form__field--checkbox">
+        <label>
+          <input class="order-form__input" id="order-agreement" name="agreement" type="checkbox" required>
+          Я согласен на обработку данных
+        </label>
+      </div>
+
+      <div class="order-form__actions">
+        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
+        <button class="button button--primary" type="submit">Отправить заявку</button>
+      </div>
+
+    </form>
+  </dialog>
+
+  <p class="success-message" id="success-message" hidden>
+    Форма успешно отправлена!
+  </p>
+
+  <a class="chat-button" href="#chat" aria-label="Открыть чат">
+    <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="12" cy="12" r="11" fill="#ffffff" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M12 1 C 5 7, 5 17, 12 23 M12 1 C 19 7, 19 17, 12 23 M1 12 C 7 7, 17 7, 23 12 M1 12 C 7 17, 17 17, 23 12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+    </svg>
+  </a>
+
+  <div class="chat-popup" id="chat">
+    <a class="chat-popup__close" href="#" aria-label="Закрыть">×</a>
+    <h3 class="chat-popup__title">Свяжитесь с нами</h3>
+    <p class="chat-popup__text">
+      Ответим на вопросы о товарах, доставке и оплате.
+    </p>
+    <ul class="chat-popup__list">
+      <li>Телефон: +7 (952) 552-52-52</li>
+      <li>E-mail: info@volley-point.ru</li>
+    </ul>
+    <a class="button button--primary" href="contacts.html">Все контакты</a>
+  </div>
+
+</body>
+</html>
