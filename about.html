@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Контактная информация учебного интернет-магазина.">
-  <title>Контакты –  Volley.Point</title>
+  <meta name="description" content="О магазине Volley.Point — товары для волейбола.">
+  <title>О нас – Volley.Point</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
           <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка и оплата</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
-          <li class="site-nav__item"><a class="site-nav__link" href="about.html">О нас</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="about.html">О нас</a></li>
         </ul>
       </nav>
     </div>
@@ -27,34 +27,51 @@
   <main>
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
-      <span class="breadcrumbs__current">Контакты</span>
+      <span class="breadcrumbs__current">О нас</span>
     </nav>
 
     <section class="section">
-      <h1>Контакты</h1>
+      <h1>О нас</h1>
       <p>
-        Здесь размещается контактная информация учебного интернет-магазина.
+        <strong>Volley.Point</strong> — магазин товаров для волейбола.
+        Мы работаем с 2020 года и помогаем игрокам, тренерам и любителям
+        волейбола находить качественный инвентарь и экипировку.
       </p>
-      <ul>
-        <li>Телефон: +7 (952) 552-52-52</li>
-        <li>E-mail: info@volley-point.ru</li>
-        <li>Адрес: г. Москва, Volley.Point</li>
+      <p>
+        В нашем ассортименте — мячи для классического и пляжного волейбола,
+         наколенники, табло и другой инвентарь от проверенных
+        производителей.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Наши преимущества</h2>
+      <ul class="advantages-list">
+        <li>только оригинальные товары от официальных поставщиков;</li>
+        <li>быстрая доставка по всей России;</li>
+        <li>консультации от опытных игроков;</li>
+        <li>гарантия на весь ассортимент.</li>
       </ul>
     </section>
 
-    <section class="section" id="feedback">
-      <h2>Обратная связь</h2>
+    <section class="section">
+      <h2>Наша миссия</h2>
       <p>
-        Для отправки заявки используйте форму в модальном окне
-        на главной странице.
+        Мы хотим, чтобы каждый волейболист — от новичка до профессионала —
+        мог найти у нас всё необходимое для игры. Мы верим, что качественный
+        инвентарь помогает раскрыть потенциал игрока и делает игру
+        ещё интереснее.
       </p>
-      <a class="button button--primary" href="index.html#contacts">Перейти к форме</a>
+    </section>
+
+    <section class="section">
+      <a class="button button--primary" href="catalog.html">Перейти в каталог</a>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-    <p>Дисциплина: фронтенд и бэкенд разработка</p>
+  <footer id="contacts">
+    <p>&copy; 2026 Volley.Point. Все права защищены.</p>
+    <p>Магазин товаров для волейбола</p>
   </footer>
 
   <a class="chat-button" href="#chat" aria-label="Открыть чат">
